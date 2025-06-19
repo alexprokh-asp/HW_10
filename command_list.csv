@@ -1,0 +1,25 @@
+    1  rm ~/.bash_history
+    2  git config --global user.name "Alexandr Prokhoda"
+    3  git config --global user.email "alexprokh@ukr.net"
+    4  git clone https://github.com/alexprokh-asp/HW_10.git
+    5  cd HW_10
+    6  touch text_ignore.txt
+    7  nano .gitignore
+    8  git status
+    9  git add .
+   10  git commit -m "Task 1 done"
+   11  touch main_test.txt
+   12  git add .
+   13  git commit -m "Task 2 done"
+   14  git checkout -b develop
+   15  touch develop_test.txt
+   16  git add .
+   17  git commit -m "Created develop_test.txt"
+   18  nano develop_test.txt
+   19  git status
+   20  git add .
+   21  git commit -m "Task 3 done"
+   22  git checkout main
+   23  git merge develop
+   24  git log
+   25  history > command_list.csv
